@@ -99,3 +99,22 @@ class Tests(unittest.TestCase):
         struct.pack_into(">I", d, 2052, 4)
         struct.pack_into(">I", d, 2060 + 12, 16384 | 12)
         self.assertEqual(inspect(bytes(d))["status"], "FAIL")
+
+    def test_toc_cannot_reference_free_slot(self):
+        d = bytearray(sample())
+        struct.pack_into(">I", d, 2052, 4)
+        struct.pack_into(">I", d, 3084, 2)
+        d[3097:3102] = b"\x04ZZZZ"
+        struct.pack_into(">I", d, 3102, 3)
+        d[3106:3234] = b"\0" * 128
+        report = inspect(bytes(d))
+        self.assertEqual(report["status"], "FAIL")
+        self.assertIn("invalid_toc_entry", report["findings"])
+
+    def test_additional_toc_live_reference(self):
+        d = bytearray(sample())
+        struct.pack_into(">I", d, 3084, 2)
+        d[3097:3102] = b"\x04ZZZZ"
+        struct.pack_into(">I", d, 3102, 2)
+        d[3106:3234] = b"\0" * 128
+        self.assertEqual(inspect(bytes(d))["status"], "PASS")
