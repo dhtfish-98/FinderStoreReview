@@ -1,5 +1,7 @@
 # FinderStoreReview
 
+New implementation author: **dhtfish98**. Current package version: **1.0.2**.
+
 Verifies the reachable Finder metadata structure in an explicitly supplied artifact and detects cyclic or truncated trees without leaking filenames.
 
 ## Supported project scope
