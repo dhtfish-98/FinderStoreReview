@@ -1,0 +1,81 @@
+{
+  "source_repo": "al45tair/ds_store",
+  "source_commit": "6f971c764a511f609615c6c4f5ae2a9403ff32cb",
+  "scope": "DS_Store Bud1 allocator tables, DSDB B-tree references/counts/leaf depths/sorted unique keys and all standard outer record value types, with bounded reads and private-safe record locations.",
+  "license": "MIT",
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1061,
+      "lines": 19,
+      "sha256": "7d0f4e9418ac55d7e6e03d4aead4cce9ecafe9ea533cf7fb89574193adcf9016",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/LICENSE"
+    },
+    {
+      "path": "README.rst",
+      "bytes": 1321,
+      "lines": 38,
+      "sha256": "91883d029ae57b62255b5d27cc58f3dae7ccb5fd91414478362e348693a39304",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/README.rst"
+    },
+    {
+      "path": "src/ds_store/__init__.py",
+      "bytes": 118,
+      "lines": 5,
+      "sha256": "d37f6692840f31de80d8e3fe9e1ea211f17feb2b9f2b2f5e2d89d0726f24d0cc",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/src/ds_store/__init__.py"
+    },
+    {
+      "path": "src/ds_store/__main__.py",
+      "bytes": 3023,
+      "lines": 102,
+      "sha256": "91184970fc583398dceef4fae578e7f5c04568493e439f45151414084eb73e8a",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/src/ds_store/__main__.py"
+    },
+    {
+      "path": "src/ds_store/buddy.py",
+      "bytes": 13829,
+      "lines": 483,
+      "sha256": "794c59af2caf7007f96adba593115568775fcde024b25d16bf7ba19165d26fc1",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/src/ds_store/buddy.py"
+    },
+    {
+      "path": "src/ds_store/store.py",
+      "bytes": 44090,
+      "lines": 1257,
+      "sha256": "dd70ec798be0e4e4f62d3f5d0c6b3d54fe849b62ca96a990d52c6cd0f3626137",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/src/ds_store/store.py"
+    },
+    {
+      "path": "tests/test_basics.py",
+      "bytes": 2674,
+      "lines": 85,
+      "sha256": "400069456a8c5611b7f2967b6772ef4da0a40e592f404c89e03c45919ab3a53d",
+      "url": "https://raw.githubusercontent.com/al45tair/ds_store/6f971c764a511f609615c6c4f5ae2a9403ff32cb/tests/test_basics.py"
+    }
+  ],
+  "new_runtime_files": [
+    "src/finderstorereview/__init__.py",
+    "src/finderstorereview/__main__.py",
+    "src/finderstorereview/core.py"
+  ],
+  "implementation_files": [
+    {
+      "path": "src/finderstorereview/__init__.py",
+      "sha256": "38582950d26e35b221eb5e109dc3283861d1300bcd8b1a0bef233bc8ff76a761",
+      "bytes": 49
+    },
+    {
+      "path": "src/finderstorereview/__main__.py",
+      "sha256": "889f673c2145e28095264339dbb3be024859a0bd7242435c479850567be2fd49",
+      "bytes": 49
+    },
+    {
+      "path": "src/finderstorereview/core.py",
+      "sha256": "bfbeaf0d1bf24af33ea28586329d8de5fdd364271b04cefd1a18e9d3a27f503a",
+      "bytes": 9441
+    }
+  ],
+  "source_review": "Upstream ds_store defaults to r+ and provides writing/allocator mutation and nested value codecs. The new implementation checks read-only allocated/free ranges and reachable DSDB trees; free ranges may extend beyond the physical file.",
+  "review_boundary": "Complete new runtime review; selected upstream format/entry-point review. Unselected upstream platform code is not claimed audited or rewritten."
+}

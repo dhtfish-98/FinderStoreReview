@@ -1,0 +1,14 @@
+{
+  "project": "FinderStoreReview",
+  "status": "PASS",
+  "test_count": 18,
+  "wheel": "finderstorereview-1.0.0-py3-none-any.whl",
+  "wheel_sha256": "b755f2c694ebf77d19a3360763206693385e6d78638391fa40d15460863bb8aa",
+  "verification": "Local supported and malformed input tests, wheel build, separate install, imported package origin and CLI checks",
+  "reproduction": [
+    "python -m pip install .",
+    "python -m unittest discover -s tests -v",
+    "python -m pip wheel --no-deps --wheel-dir artifacts ."
+  ],
+  "limits": "Point-in-time engineering evidence only; CVP qualification and approval remain OPEN"
+}
