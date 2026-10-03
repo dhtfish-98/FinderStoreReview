@@ -1,0 +1,35 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "FinderStoreReview",
+  "author": "dhtfish98",
+  "kind": "python",
+  "base_public_commit": "578cd6238a9f8e94ddd6148a78e97a5543bbb9f0",
+  "restored_inputs": [
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "7d0f4e9418ac55d7e6e03d4aead4cce9ecafe9ea533cf7fb89574193adcf9016"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "cdd2e8cd07fbc1a01da65fd0c7b7d8fc1576ae4e20b19b52270a48a63aed66b5"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "30cb21c3c758596752ff1915f1b06b04606065db5baa95396a606f5cc3584e10"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "df66d8f58275abc13855950b05ce0b3dc4705f4a3d653f11beabbfbe755f847f"
+    },
+    {
+      "original": "examples/README.md",
+      "stored": "项目文档/examples/README.md",
+      "sha256": "5724cd76a86d4ce76bdaf67b022cb3796484e7294cb5545eeee6e22f8397126b"
+    }
+  ],
+  "platform_entries": []
+}
