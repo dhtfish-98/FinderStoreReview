@@ -78,7 +78,7 @@
   ],
   "source_review": "Upstream ds_store defaults to r+ and provides writing/allocator mutation and nested value codecs. The new implementation checks read-only allocated/free ranges and reachable DSDB trees; free ranges may extend beyond the physical file.",
   "review_boundary": "Complete new runtime review; selected upstream format/entry-point review. Unselected upstream platform code is not claimed audited or rewritten.",
-  "current_reaudit": "REAUDIT_20261002.json",
-  "current_verification": "ATTRIBUTION_UPDATE_20261002.json",
+  "current_reaudit": "项目文档/REAUDIT_20261002.json",
+  "current_verification": "项目文档/ATTRIBUTION_UPDATE_20261002.json",
   "implementation_author": "dhtfish98"
 }
